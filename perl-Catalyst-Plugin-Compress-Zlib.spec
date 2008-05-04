@@ -1,7 +1,7 @@
 
 %define realname   Catalyst-Plugin-Compress-Zlib
 %define version    0.03
-%define release    %mkrel 1
+%define release    %mkrel 2
 
 Name:       perl-%{realname}
 Version:    %{version}
@@ -19,9 +19,7 @@ BuildRequires: perl(Compress::Zlib)
 BuildArch: noarch
 
 %description
-
 Gzip compress response if client supports it.
-
 
 
 
