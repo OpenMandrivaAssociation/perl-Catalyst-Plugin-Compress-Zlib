@@ -1,15 +1,15 @@
 %define upstream_name    Catalyst-Plugin-Compress-Zlib
-%define upstream_version 0.05
+%define upstream_version 0.06
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	Gzip response
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Catalyst/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Catalyst/Catalyst-Plugin-Compress-Zlib-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Catalyst::Runtime)
@@ -66,5 +66,6 @@ make test
 * Thu May 01 2008 Olivier Thauvin <nanardon@mandriva.org> 0.03-1mdv2009.0
 + Revision: 199785
 - import perl-Catalyst-Plugin-Compress-Zlib
+
 
 

@@ -1,2 +1,4 @@
+removed_sources:
+  Catalyst-Plugin-Compress-Zlib-0.05.tar.gz: c895954ff107b3f2476921e6e68176c446d9b87b
 sources:
-  "Catalyst-Plugin-Compress-Zlib-0.05.tar.gz": c895954ff107b3f2476921e6e68176c446d9b87b
+  Catalyst-Plugin-Compress-Zlib-0.06.tar.gz: 7ef69484076b1562d47a209365fa1132b9dc6b27
