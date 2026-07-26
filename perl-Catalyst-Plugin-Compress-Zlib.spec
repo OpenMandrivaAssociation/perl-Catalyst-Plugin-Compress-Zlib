@@ -1,15 +1,13 @@
 %define upstream_name    Catalyst-Plugin-Compress-Zlib
-%define upstream_version 0.06
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	4
+Version:	0.06
+Release:	5
 
 Summary:	Gzip response
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://dev.catalyst.perl.org/repos/Catalyst/trunk/Catalyst-Plugin-Compress-Zlib
-Source0:	https://cpan.metacpan.org/authors/id/M/MS/MSTROUT/Catalyst-Plugin-Compress-Zlib-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/M/MS/MSTROUT/Catalyst-Plugin-Compress-Zlib-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -21,7 +19,7 @@ BuildArch:	noarch
 Gzip compress response if client supports it.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -54,9 +52,7 @@ make test
 
 * Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 0.30.0-1mdv2010.0
 + Revision: 402988
-- rebuild using %%perl_convert_version
-
-* Fri Aug 08 2008 Thierry Vignaud <tv@mandriva.org> 0.03-3mdv2009.0
+- rebuild using %0.06 Fri Aug 08 2008 Thierry Vignaud <tv@mandriva.org> 0.03-3mdv2009.0
 + Revision: 268392
 - rebuild early 2009.0 package (before pixel changes)
 
